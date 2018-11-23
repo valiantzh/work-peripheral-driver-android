@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dcdz.drivers.demo.fragment.elocker.DeskFragment">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset"
+        android:layout_marginEnd="@dimen/context_horizontal_padding"
+        android:layout_marginStart="@dimen/context_horizontal_padding"
+        android:layout_marginBottom="@dimen/context_horizontal_padding">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/context_horizontal_padding">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@color/doorOpen"
+            android:text="@string/prompt_nothing_close"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:gravity="center"  />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@color/openNothing"
+            android:text="@string/prompt_nothing_open"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:gravity="center"  />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@color/closeThing"
+            android:text="@string/prompt_thing_close"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@color/openThing"
+            android:text="@string/prompt_thing_open"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:gravity="center"  />
+    </LinearLayout>
+
+</RelativeLayout>

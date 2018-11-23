@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/title_stability"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="#B0BFC8"
+        android:gravity="center"
+        android:text="稳定性测试"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_sub_size"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_stability"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/frame_background"
+        android:orientation="vertical"
+        android:padding="@dimen/context_horizontal_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_stability">
+
+        <TextView
+            android:id="@+id/tv_tips"
+            style="@style/TipsStyle"
+            android:gravity="center_horizontal" />
+
+        <!--上-->
+        <LinearLayout
+            android:id="@+id/ll_stability_test_1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="16dp"
+                android:background="@drawable/list_border_circle_angle_wide"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="测试次数："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textSize="26sp"
+                        android:id="@+id/et_stability_times"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="测试顺序："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/sp_stability_type"
+                        android:entries="@array/stability_test_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/list_border_circle_angle_wide"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="开始时间："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:id="@+id/tv_stability_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="结束时间："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:id="@+id/tv_stability_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="测试次数："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:id="@+id/tv_stability_test_times"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--<LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="物品状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:id="@+id/tv_stability_goods_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--下-->
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:id="@+id/ll_stability_test_2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="32dp"
+                android:textColor="#fff"
+                android:textSize="26px"
+                android:background="@drawable/button"
+                android:text="开始"
+                android:id="@+id/btn_stability_start_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:enabled="false"
+                android:layout_marginRight="32dp"
+                android:textColor="#fff"
+                android:textSize="26px"
+                android:background="@drawable/button"
+                android:text="停止"
+                android:id="@+id/btn_stability_stop_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_marginTop="32dp"
+            android:id="@+id/ll_stability_test_3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="invisible"
+                android:enabled="false"
+                android:layout_marginRight="32dp"
+                android:textColor="#fff"
+                android:textSize="26px"
+                android:background="@drawable/button"
+                android:text="再次开箱"
+                android:id="@+id/btn_stability_open_box_again_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:visibility="invisible"
+                android:enabled="false"
+                android:layout_marginRight="32dp"
+                android:textColor="#fff"
+                android:textSize="26px"
+                android:background="@drawable/button"
+                android:text="再次开箱"
+                android:id="@+id/btn_stability_open_box_again_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view_horizontal_line_0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:text="随机跑位测试："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:id="@+id/ll_stability_test_4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="32dp"
+                android:textColor="#fff"
+                android:textSize="26px"
+                android:background="@drawable/button"
+                android:text="开始"
+                android:id="@+id/btn_stability_start_test_alter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:enabled="false"
+                android:layout_marginRight="32dp"
+                android:textColor="#fff"
+                android:textSize="26px"
+                android:background="@drawable/button"
+                android:text="停止"
+                android:id="@+id/btn_stability_stop_test_alter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keyPreviewLayout="@layout/key_preview"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

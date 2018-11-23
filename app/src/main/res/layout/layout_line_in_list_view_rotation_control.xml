@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/ll_line_in_list_view_rotation_control"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+        <LinearLayout
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_rotation_control_door_id"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:text="#1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_rotation_control_box_type"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:text="大"
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_rotation_control_door_status"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:text="门开"
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_rotation_control_open_door"
+                android:text="开门"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_rotation_control_box_status"
+                android:text="有物"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

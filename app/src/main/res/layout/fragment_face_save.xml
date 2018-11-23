@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".demo.fragment.image.FaceSaveFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人脸入库"/>
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="查看"/>
+    </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".demo.fragment.image.FaceRecognitionFragment">
+
+        <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cameraPlaySounds="true"
+            app:cameraGrid="off"
+            app:cameraCropOutput="true"
+            app:cameraFacing="front"
+            app:cameraFlash="off"
+            app:cameraAudio="off"
+            app:cameraGestureTap="none"
+            app:cameraGestureLongTap="none"
+            app:cameraGesturePinch="zoom"
+            app:cameraGestureScrollHorizontal="exposureCorrection"
+            app:cameraGestureScrollVertical="none"
+            app:cameraJpegQuality="100"
+            app:cameraSessionType="picture" />
+        <com.dcdz.drivers.cv.TrackingOverlay
+            android:id="@+id/tracking_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

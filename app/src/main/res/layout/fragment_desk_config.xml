@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dcdz.drivers.demo.fragment.config.DeskConfigFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_desk_count"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sp_locker_group"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/desk_count"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_desk_save"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:text="@string/button_save"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:padding="6.0dip"
+            android:text="@string/prompt_desk_number"
+            android:textColor="#ff000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:text="@string/prompt_box_count"
+            android:textColor="#ff000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:padding="6.0dip"
+            android:text="@string/prompt_desk_name"
+            android:textColor="#ff000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:text="@string/prompt_assets_code"
+            android:textColor="#ff000000"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:padding="6.0dip"
+            android:text="@string/prompt_swift_number"
+            android:textColor="#ff000000"
+            android:textSize="20sp"/>
+
+    </TableRow>
+    <ListView
+        android:id="@+id/lv_desk_setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

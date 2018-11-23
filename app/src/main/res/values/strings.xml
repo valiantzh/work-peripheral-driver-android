@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">东城设备驱动服务</string>
+    //TODO：每次版本发布,此处必须调整
+    //for CaiNiao 2.0.0; for DCDZ 1.1.0
+    <string name="interface_version">1.0.0.18062601</string>
+    <string name="app_vendorName">DONGCHENG</string>
+    <string name="app_desk_config">CAINIAO</string>
+    <string name="config_driver_board_port">驱动板</string>
+    <string name="peripheral_printer">打印机</string>
+    <string name="peripheral_scanner">扫描枪</string>
+    <string name="peripheral_ammeter">电表</string>
+    <string name="peripheral_heater">加热器</string>
+    <string name="peripheral_card_reader">读卡器</string>
+    <string name="peripheral_thermostat">温控器</string>
+    <string name="peripheral_coins">投币器</string>
+    <string name="peripheral_notes">纸币器</string>
+    <string name="peripheral_port">串口号：</string>
+    <string name="peripheral_acccode">设备编码</string>
+    <string name="peripheral_type">设备型号：</string>
+    <string name="peripheral_banding">绑定服务</string>
+    <string name="peripheral_unbanding">解绑服务</string>
+    <string name="peripheral_openport">打开串口</string>
+    <string name="peripheral_clossport">关闭串口</string>
+
+    <string name="elocker_key">管理开关：</string>
+    <string name="elocker_shank">震动状态：</string>
+    <string name="elocker_tmper">防撬状态：</string>
+    <string name="elocker_power">电源状态：</string>
+    <string name="elocker_temp">环境温度：</string>
+    <string name="elocker_Humidity">环境湿度：</string>
+    <string name="elocker_maxtemp">散热装置启动温度：</string>
+    <string name="elocker_mintemp">加热装置启动温度：</string>
+    <string name="elocker_ammeter">电表度数：</string>
+    <string name="elocker_heater">加热器温度：</string>
+    <string name="elocker_reboot_time">重启延时(单位 秒)：</string>
+    <string name="elocker_reboot">系统重启</string>
+    <string name="elocker_outagereboot">断电重启</string>
+    <string name="elocker_mainstatus">获取主柜状态</string>
+
+
+    <string name="thermostat_open_temp">开机温度</string>
+    <string name="thermostat_now_temp">当机温度</string>
+    <string name="thermostat_close_temp">关机机温度</string>
+    <string name="thermostat_get_temp">获取温度</string>
+    <string name="thermostat_set_temp">设置温度</string>
+
+    <string name="button_save">保 存</string>
+    <string name="button_login">登 入</string>
+    <string name="button_back">返 回</string>
+    <string name="button_enter">确 定</string>
+    <string name="button_setup">设 置</string>
+    <string name="button_desk">副柜设置</string>
+
+    <string name="desk_number">副柜数量</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_password">请输入登录密码</string>
+    <string name="action_login">登录</string>
+    <string name="error_incorrect_password">密码错误，请重试</string>
+    <string name="app_exit">退出</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_button_text">主机</string>
+    <string name="card_text_button">读卡器</string>
+    <string name="scanner_text_button">扫描枪</string>
+    <string name="desk_detect_text_button">副柜检测</string>
+    <string name="general_peripherals">通用外设</string>
+    <string name="smart_desk">智能柜系列</string>
+    <string name="rotation_desk">旋转柜系列</string>
+    <string name="config_text_button">配置</string>
+    <string name="debugging_button">调试</string>
+    <string name="service_state_text">服务状态</string>
+    <string name="prompt_scanner_param">扫描枪配置</string>
+    <string name="prompt_port">串口</string>
+    <string name="prompt_engine_port">驱动板串口</string>
+    <string name="prompt_electric_port">电表串口</string>
+    <string name="prompt_heat_port">加热器串口</string>
+
+    <!-- Strings related to desk -->
+    <string name="prompt_desk_count">副柜数量</string>
+    <string name="prompt_desk_number">副柜编号</string>
+    <string name="prompt_desk_name">副柜名称</string>
+    <string name="prompt_box_count">箱门数量</string>
+    <string name="prompt_assets_code">资产编码</string>
+    <string name="prompt_swift_number">流水号</string>
+    <string name="prompt_nothing_close">无物门关</string>
+    <string name="prompt_nothing_open">无物门开</string>
+    <string name="prompt_thing_close">有物门关</string>
+    <string name="prompt_thing_open">有物门开</string>
+
+    <string name="prompt_verdor">厂家</string>
+    <string name="prompt_work_model">工作模式</string>
+    <string name="model_normal">常亮模式</string>
+    <string name="model_burst">触发模式</string>
+    <string name="prompt_config">配置信息</string>
+    <string name="prompt_lower">下限</string>
+    <string name="prompt_upper">上限</string>
+    <string name="prompt_scanner_test">扫描枪测试</string>
+    <string name="prompt_print_test">打印机测试</string>
+
+    <string name="cardNo">卡号：</string>
+    <string name="names">姓名：</string>
+    <string name="address">地址：</string>
+    <string name="national">民族：</string>
+    <string name="gender">性别：</string>
+    <string name="dateOfBirth">出生日期：</string>
+    <string name="sendLicenseAgencies">发证机关：</string>
+    <string name="dateOfRegistration">办证日期：</string>
+    <string name="dateOfEnd">截止日期：</string>
+
+    <!-- Strings related to info -->
+    <string name="info_error_password">密码错误，请重试</string>
+    <string name="info_deskname">副柜名称不能相同</string>
+    <string name="info_default">默认</string>
+    <string name="info_serialnumber">流水号</string>
+    <string name="info_deskType">副柜类型不一致</string>
+    <string name="info_savesucceed">保存成功</string>
+    <string name="info_comerror">串口不能相同</string>
+    <string name="info_mainexist">主柜已存在</string>
+    <string name="info_allopenbox">全开</string>
+    <string name="info_gainfailure">获取失败</string>
+    <string name="info_gainresult">获取结果</string>
+    <string name="info_barcodeswitch">条码切换</string>
+    <string name="info_ercodeswitch">二维码切换</string>
+    <string name="info_patternswitch">模式切换</string>
+    <string name="info_service_unrealized">服务连接失败</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".demo.fragment.image.FaceRecognitionFragment">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cameraPlaySounds="true"
+        app:cameraGrid="off"
+        app:cameraCropOutput="true"
+        app:cameraFacing="front"
+        app:cameraFlash="off"
+        app:cameraAudio="off"
+        app:cameraGestureTap="none"
+        app:cameraGestureLongTap="none"
+        app:cameraGesturePinch="zoom"
+        app:cameraGestureScrollHorizontal="exposureCorrection"
+        app:cameraGestureScrollVertical="none"
+        app:cameraJpegQuality="100"
+        app:cameraSessionType="picture" />
+    <com.dcdz.drivers.cv.TrackingOverlay
+        android:id="@+id/tracking_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.dcdz.drivers.cv.OverlayView
+        android:id="@+id/debug_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

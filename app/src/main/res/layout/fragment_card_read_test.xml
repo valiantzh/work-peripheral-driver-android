@@ -1,0 +1,161 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="model"
+            type="com.dcdz.drivers.demo.model.CardReadModel"/>
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/context_horizontal_padding"
+                android:layout_marginStart="@dimen/context_horizontal_padding"
+                android:layout_marginTop="10dp"
+                android:background="#30000000"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="读卡器配置" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/prompt_port" />
+
+                <TextView
+                    android:id="@+id/tv_card_read_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/prompt_verdor" />
+
+                <TextView
+                    android:id="@+id/tv_card_read_vendor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_card_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/context_horizontal_padding"
+                android:layout_marginStart="@dimen/context_horizontal_padding"
+                android:layout_marginTop="80dp"
+                android:background="#3000AF00"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/cardNo + model.cardNo}"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/names + model.names}"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/address + model.address}"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/national + model.national}"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/gender + model.gender}"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/dateOfBirth + model.dateOfBirth}"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/sendLicenseAgencies + model.sendLicenseAgencies}"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/dateOfRegistration + model.dateOfRegistration}"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@{@string/dateOfEnd + model.dateOfEnd}"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_card_read"
+                android:layout_marginEnd="@dimen/context_horizontal_padding"
+                android:layout_marginStart="@dimen/context_horizontal_padding"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggle_start_stop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="开始读卡"
+                    android:textOn="停止读卡" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</layout>

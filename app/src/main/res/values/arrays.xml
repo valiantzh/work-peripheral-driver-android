@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="device_port">
+        <item>COM1</item>
+        <item>COM2</item>
+        <item>COM3</item>
+        <item>COM4</item>
+        <item>COM5</item>
+        <item>COM6</item>
+        <item>ttyUSB0</item>
+        <item>/dev/ttyimx3</item>
+        <item>/dev/ttymxc6</item>
+    </string-array>
+
+    <string-array name="desk_count">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="time_count">
+        <item>0</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="scanner_vendor">
+        <item>Newland</item>
+        <item>Honeywell</item>
+        <item>Dcsr</item>
+    </string-array>
+    <string-array name="cardreader_brand">
+        <item>StdCardReader</item>
+        <item>XZXCardReader</item>
+    </string-array>
+    <string-array name="printer_brand">
+        <item>3寸</item>
+        <item>4寸</item>
+    </string-array>
+    <string-array name="box_counts">
+        <item>04</item>
+        <item>06</item>
+        <item>08</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="box_type">
+        <item>默认</item>
+        <item>M01</item>
+        <item>L01</item>
+        <item>L02</item>
+        <item>L03</item>
+        <item>R01</item>
+        <item>R02</item>
+        <item>R03</item>
+    </string-array>
+
+    <string-array name="cn_desk_type">
+        <item>Z1(主柜_绿色箭头向右)</item>
+        <item>Z2(主柜_绿色箭头向左)</item>
+        <item>Z3(主柜_纯蓝色)</item>
+        <item>A(副柜_深蓝顶_灰绿蓝)</item>
+        <item>B(副柜_深蓝顶_蓝)</item>
+        <item>C(副柜_深蓝顶_蓝_AILOGO)</item>
+        <item>D(副柜_浅蓝顶_灰绿蓝)</item>
+    </string-array>
+
+    <string-array name="cn_desk_group">
+        <item />
+        <item>自定义</item>
+        <item>A-Z1-A-A(一拖三_主机绿色箭头向右)</item>
+        <item>B-Z2-B-C(一拖三_主机绿色箭头向左)</item>
+        <item>D-Z3-D-D(一拖三_纯蓝色AI)</item>
+        <item>A-Z1-A-A-A(一拖四_主机绿色箭头向右)</item>
+        <item>B-Z2-B-B-C(一拖四_绿色箭头向左)</item>
+    </string-array>
+
+    <string-array name="count_execute">
+        <item>1</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+    </string-array>
+
+    <string-array name="scanner_patten">
+        <item>常亮模式</item>
+        <item>触发模式</item>
+    </string-array>
+
+    <string-array name="min_Temp">
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="max_Temp">
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="switch_paper_mode">
+        <item>半切</item>
+        <item>全切</item>
+    </string-array>
+
+    <string-array name="shelf_num">
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="shelf_type">
+        <item>大</item>
+        <item>小</item>
+    </string-array>
+
+    <string-array name="stability_test_type">
+        <item>顺序</item>
+        <item>随机</item>
+    </string-array>
+</resources>

@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/context_horizontal_padding"
+            android:layout_marginStart="@dimen/context_horizontal_padding"
+            android:layout_marginTop="10dp"
+            android:background="#30000000"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打印机配置" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/prompt_port" />
+
+            <TextView
+                android:id="@+id/tv_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="COM1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/prompt_verdor" />
+
+            <TextView
+                android:id="@+id/tv_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="东城电子" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打印内容"
+                android:layout_marginStart="30dp"
+                android:textSize="@dimen/title_text_size" />
+            <EditText
+                android:id="@+id/et_print_message"
+                android:layout_width="600dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:background="#3000AF00"/>
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_print"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="打印"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="状态"
+                android:textSize="@dimen/title_text_size" />
+            <TextView
+                android:id="@+id/tv_command"
+                android:layout_width="600dp"
+                android:layout_marginStart="30dp"
+                android:layout_height="100dp"
+                android:background="#3000AF00"/>
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_marginStart="30dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_send_command"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="查询状态"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

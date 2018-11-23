@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/sp_engine_port"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="232dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/device_port"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/sp_print_port"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/sp_engine_port"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/device_port"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sp_scanner_port"
+            app:layout_constraintTop_toBottomOf="@+id/sp_scanner_port" />
+
+        <Spinner
+            android:id="@+id/sp_card_read_port"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/sp_engine_port"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/device_port"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sp_print_port"
+            app:layout_constraintTop_toBottomOf="@+id/sp_print_port" />
+
+        <Spinner
+            android:id="@+id/sp_scanner_port"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/sp_engine_port"
+            android:layout_below="@+id/sp_engine_port"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/device_port"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sp_engine_port"
+            app:layout_constraintTop_toBottomOf="@+id/sp_engine_port" />
+
+        <Spinner
+            android:id="@+id/sp_scanner_model"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/sp_engine_port"
+            android:layout_below="@+id/sp_engine_port"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/scanner_patten"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_scanner_port"
+            app:layout_constraintStart_toEndOf="@+id/sp_scanner_port" />
+
+        <Spinner
+            android:id="@+id/sp_scanner_vendor"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/sp_engine_port"
+            android:layout_below="@+id/sp_engine_port"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/scanner_vendor"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_scanner_model"
+            app:layout_constraintStart_toEndOf="@+id/sp_scanner_model" />
+
+        <Spinner
+            android:id="@+id/sp_simcard_send"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/sp_engine_port"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/device_port"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sp_card_read_port"
+            app:layout_constraintTop_toBottomOf="@+id/sp_card_read_port" />
+
+        <Spinner
+            android:id="@+id/sp_iccard_send"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/sp_engine_port"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/device_port"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sp_simcard_send"
+            app:layout_constraintTop_toBottomOf="@+id/sp_simcard_send" />
+
+        <Spinner
+            android:id="@+id/sp_rotate_servo"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/sp_engine_port"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/device_port"
+            android:spinnerMode="dropdown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sp_iccard_send"
+            app:layout_constraintTop_toBottomOf="@+id/sp_iccard_send" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:text="保存"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sp_rotate_servo"
+            app:layout_constraintTop_toBottomOf="@+id/sp_rotate_servo" />
+
+        <CheckBox
+            android:id="@+id/checkBox_card_read"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:text="读卡器"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_card_read_port"
+            app:layout_constraintEnd_toStartOf="@+id/sp_card_read_port" />
+
+        <CheckBox
+            android:id="@+id/checkBox_engine"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:text="@string/config_driver_board_port"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_engine_port"
+            app:layout_constraintEnd_toStartOf="@+id/sp_engine_port" />
+
+        <CheckBox
+            android:id="@+id/checkBox_scanner"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:text="@string/peripheral_scanner"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_scanner_port"
+            app:layout_constraintEnd_toStartOf="@+id/sp_scanner_port" />
+
+        <CheckBox
+            android:id="@+id/checkBox_printer"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:text="打印机"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_print_port"
+            app:layout_constraintEnd_toStartOf="@+id/sp_print_port" />
+
+        <CheckBox
+            android:id="@+id/checkBox_simcard_send"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:text="SIM发卡器"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_simcard_send"
+            app:layout_constraintEnd_toStartOf="@+id/sp_simcard_send" />
+
+        <CheckBox
+            android:id="@+id/checkBox_iccard_send"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:text="IC发卡器"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_iccard_send"
+            app:layout_constraintEnd_toStartOf="@+id/sp_iccard_send" />
+
+        <CheckBox
+            android:id="@+id/checkBox_rotate_servo"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="56dp"
+            android:text="PLC"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sp_rotate_servo"
+            app:layout_constraintEnd_toStartOf="@+id/sp_rotate_servo" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

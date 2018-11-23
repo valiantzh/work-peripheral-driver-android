@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="520dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_shelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:text="货架"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_shelf"
+        app:layout_constraintTop_toTopOf="@+id/tv_shelf"/>
+    <!-- <Spinner
+         android:id="@+id/sp_layer"
+         android:layout_width="80dp"
+         android:layout_height="35dp"
+         android:entries="@array/shelf_num"
+         android:textSize="20sp"
+         android:layout_marginLeft="40dp"
+         app:layout_constraintStart_toEndOf="@+id/tv_num"
+         app:layout_constraintTop_toTopOf="@+id/tv_shelf"/>-->
+    <TextView
+        android:id="@+id/sp_layer"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:entries="@array/shelf_num"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:drawableRight="@drawable/spinner"
+        app:layout_constraintStart_toEndOf="@+id/tv_num"
+        app:layout_constraintTop_toTopOf="@+id/tv_shelf"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="层"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/sp_layer"
+        app:layout_constraintTop_toTopOf="@+id/tv_shelf"/>
+
+    <ImageButton
+        android:id="@+id/ib_shelf"
+        android:layout_width="206dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shelf"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_shelf"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shelf"/>
+    <ImageButton
+        android:id="@+id/ib_shelf_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reduce"
+        app:layout_constraintTop_toBottomOf="@+id/ib_shelf"
+        app:layout_constraintRight_toRightOf="@+id/ib_shelf"
+        app:layout_constraintLeft_toLeftOf="@+id/ib_shelf"/>
+    <ImageButton
+        android:id="@+id/ib_shelf_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/ib_shelf"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_shelf"
+        app:layout_constraintTop_toTopOf="@+id/ib_shelf"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="CP_Video_Sum" format="integer" />
+        <attr name="CP_Background" format="color" />
+        <attr name="CP_Separated_Line_Background" format="color" />
+        <attr name="CP_Progressbar_Background" format="color" />
+        <attr name="CP_Separated_Line_Width" format="dimension" />
+    </declare-styleable>
+</resources>

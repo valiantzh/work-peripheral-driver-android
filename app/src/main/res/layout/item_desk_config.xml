@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_desk_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.7"
+        android:gravity="center_vertical"
+        android:padding="1dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_box_num"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="23"/>
+
+    <Button
+        android:id="@+id/btn_box_type"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="副柜类型"/>
+
+    <Button
+        android:id="@+id/bt_desk_code"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="资产编码" />
+
+    <Button
+        android:id="@+id/bt_serial_code"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="流水号" />
+</LinearLayout>

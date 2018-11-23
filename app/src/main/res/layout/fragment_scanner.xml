@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/context_horizontal_padding"
+            android:layout_marginStart="@dimen/context_horizontal_padding"
+            android:layout_marginTop="10dp"
+            android:background="#30000000"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_scanner_param" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/prompt_port" />
+
+            <TextView
+                android:id="@+id/text_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="COM1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/prompt_verdor" />
+
+            <TextView
+                android:id="@+id/text_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="东城电子" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/prompt_work_model" />
+
+            <TextView
+                android:id="@+id/text_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/model_normal" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_scan_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:id="@+id/toggle_scanning"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="36dp"
+                android:textOff="扫码开始"
+                android:textOn="扫码停止" />
+
+            <ToggleButton
+                android:id="@+id/toggle_barcode"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="36dp"
+                android:checked="true"
+                android:textOff="条码启用"
+                android:textOn="条码禁用" />
+
+            <ToggleButton
+                android:id="@+id/toggle_qr_code"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="36dp"
+                android:textOff="二维码启用"
+                android:textOn="二维码禁用" />
+
+            <ToggleButton
+                android:id="@+id/toggle_model"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="36dp"
+                android:checked="true"
+                android:textOff="常亮模式"
+                android:textOn="触发模式" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_scanner_message"
+            android:layout_width="600dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:background="#3000AF00"
+            android:text="@string/prompt_scanner_test"
+            android:textAlignment="center"
+            android:textColor="#afa6b3"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+</ScrollView>

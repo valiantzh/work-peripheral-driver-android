@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="titleBg">#7685E7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="textDefault">#0e8a8a</color>
+
+    <color name="freeBox">#6B8E23</color>
+    <color name="usedBox">#7D26CD</color>
+    <color name="lockBox">#FF8C00</color>
+    <color name="faultBox">#EE3B3B</color>
+
+    <color name="doorClose">#5f7358</color>
+    <color name="doorOpen">#6d91ec</color>
+    <color name="undefined">#c2c0bc</color>
+    <color name="colorConfig">#7B1FA2</color>
+    <color name="colorInfo">#FF9800</color>
+    <color name="line_dark">#3e3e3e</color>
+    <color name="line_light">#efeffa</color>
+    <color name="solid_gray">#595959</color>
+
+
+    <color name="closeThing">#6B8E23</color>
+    <color name="closeNoting" >#7685E7</color>
+    <color name="openNothing">#FF8C00</color>
+    <color name="openThing">#EE3B3B</color>
+
+</resources>

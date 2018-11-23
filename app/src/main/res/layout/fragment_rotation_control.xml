@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg_rotation_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/group_background"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/fl_rotation_control"
+        app:layout_constraintTop_toBottomOf="parent">
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fl_rotation_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:padding="@dimen/context_horizontal_padding"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_rotation_control">
+        <!--上-->
+        <LinearLayout
+            android:id="@+id/ll_rotation_control_1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_rotation_control_system_init"
+                    android:layout_marginBottom="32dp"
+                    android:textColor="#fff"
+                    android:textSize="26px"
+                    android:text="系统初始化"
+                    android:background="@drawable/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_rotation_control_system_reset"
+                    android:text="系统复位"
+                    android:textColor="#fff"
+                    android:textSize="26px"
+                    android:background="@drawable/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/list_border_circle_angle_wide"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="系统状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_system_status"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="报警信息："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_warning_info"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="运动状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_moving_status"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="当前列："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_current_box_num"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/view_horizontal_line_0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!--中-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_rotation_control_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="门编号"
+                    android:background="@drawable/list_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="类型"
+                    android:background="@drawable/list_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="门状态"
+                    android:background="@drawable/list_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="操作"
+                    android:background="@drawable/list_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="箱状态"
+                    android:background="@drawable/list_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="货位号"
+                    android:background="@drawable/list_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="操作"
+                    android:background="@drawable/list_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:background="@drawable/list_border"
+                    android:id="@+id/lv_rotation_control_list"
+                    android:gravity="start"
+                    android:horizontalSpacing="1pt"
+                    android:verticalSpacing="1pt"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"/>
+                <ListView
+                    android:background="@drawable/list_border"
+                    android:id="@+id/lv_rotation_control_list_another"
+                    android:gravity="start"
+                    android:horizontalSpacing="1pt"
+                    android:verticalSpacing="1pt"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_horizontal_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!--下-->
+        <LinearLayout
+            android:id="@+id/ll_rotation_control_3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="26px"
+                        android:text="维护门："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/btn_rotation_control_open_repair_door"
+                        android:textColor="#fff"
+                        android:textSize="26px"
+                        android:text="开门"
+                        android:background="@drawable/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="26px"
+                        android:text="维护门状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_repair_door_status"
+                        android:textSize="26px"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/list_border_circle_angle_wide"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="自动门状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_auto_door_status"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="手动门状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_manual_door_status"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="光栅状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_raster_status"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--<LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="震动状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_shock_status"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="供电方式："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_rotation_control_power_supply"
+                        android:textSize="18sp"
+                        android:text="未知"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keyPreviewLayout="@layout/key_preview"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
+
