@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hzdongcheng.drivers.service">
+
+    <application>
+        <service
+            android:name=".DriverService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.dcdz.drivers.service" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
